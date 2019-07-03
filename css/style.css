@@ -75,7 +75,7 @@ Accent: rgba(93, 217, 193, 1);
 
 .nav-link {
     color: rgba(85, 86, 119, 1);
-    display: block;
+    /* display: block; */
 }
 
 .banner {
@@ -121,6 +121,14 @@ Accent: rgba(93, 217, 193, 1);
 /*-----MEDIA QUERIES-----*/
 
 @media (min-width: 769px) {
+
+    .main-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1021px) {
