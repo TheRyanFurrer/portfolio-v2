@@ -126,13 +126,13 @@ Accent: rgba(93, 217, 193, 1);
 .work-2 {
     background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/dubco.jpeg);
     background-size: cover;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 .work-3 {
     background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/clearbrook.jpeg);
     background-size: cover;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 .content-card-location {
