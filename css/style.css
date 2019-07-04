@@ -35,15 +35,16 @@ body {
     color: rgba(222, 223, 242, 1);
 }
 
-.button-type-2 {
-    border: 2px solid rgba(85, 86, 119, 1);
+.button-type-2 { 
+    background: rgba(222, 223, 242, 1);
+    box-shadow: inset 0 0 0 2px rgba(85, 86, 119, 1);
     padding: 10px;
     text-transform: lowercase;
 }
 
 .button-type-2:hover {
-    background: rgba(202, 203, 220, 1);
-    border: 2px solid rgba(52, 53, 70, 1);
+    background: rgba(202, 203, 220, 1);    
+    box-shadow: inset 0 0 0 2px rgba(52, 53, 70, 1);
 }
 
 /*-----COLOR PALETTE-----
@@ -79,6 +80,7 @@ Accent: rgba(93, 217, 193, 1);
 }
 
 .banner {
+    background:linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
@@ -114,33 +116,48 @@ Accent: rgba(93, 217, 193, 1);
 }
 
 .work-1 {
-    background: url(../img/wsdo-edit.jpg);
+    background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/wsdo.jpeg);
     background-size: cover;
 }
 
 .work-2 {
-    background: url(../img/dubco-edit.jpg);
+    background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/dubco.jpeg);
     background-size: cover;
 }
 
 .work-3 {
-    background: url(../img/clearbrook-edit.jpg);
+    background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/clearbrook.jpeg);
     background-size: cover;
 }
-
-/* .website-photo {
-} */
 
 .content-card-location {
     font-style: italic;
 }
 
 .website-links {
-    margin-top: 15px;
+    margin-top: 25px;
+}
+
+.about {
+    margin-bottom: 50px;
 }
 
 .footer {
+    background: rgba(52, 53, 70, 1);
+    color: rgba(202, 203, 220, 1);
+    display: flex;
+    flex-flow: column wrap;
+    height: 7vh;
+    justify-content: center;
     text-align: center;
+}
+
+.footer a {
+    color: rgba(202, 203, 220, 1);
+}
+
+.footer a:hover  {
+    color: rgba(93, 217, 193, 1);
 }
 
 /*-----MEDIA QUERIES-----*/
@@ -163,7 +180,7 @@ Accent: rgba(93, 217, 193, 1);
     }
 
     .main-content {
-        margin: 0 auto;
+        margin: 50px auto;
         width: 80%;
     }
 
@@ -181,9 +198,19 @@ Accent: rgba(93, 217, 193, 1);
         width: 33%;
     }
 
-    .work-1 p,
-    .work-2 p,
-    .work-3 p {
-        align-items: flex-end;
+    .content-card {
+        display: flex;
+        flex-flow: row wrap;
     }
+
+    /* .content-card p {
+        text-align: left;
+    } */
+
+    .about,
+    .contact {
+        padding: 10px;
+        width: 50%;
+    }
+
 }
