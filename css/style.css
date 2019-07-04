@@ -25,6 +25,7 @@ body {
 
 .button-type-1 {
     background: rgba(85, 86, 119, 1);
+    border-radius: 10px;
     color: rgba(222, 223, 242, 1);
     padding: 10px;
     text-transform: lowercase;
@@ -37,6 +38,7 @@ body {
 
 .button-type-2 { 
     background: rgba(222, 223, 242, 1);
+    border-radius: 10px;
     box-shadow: inset 0 0 0 2px rgba(85, 86, 119, 1);
     padding: 10px;
     text-transform: lowercase;
@@ -110,6 +112,7 @@ Accent: rgba(93, 217, 193, 1);
 .work-2,
 .work-3 {
     border: 2px solid rgba(252, 252, 253, 1);
+    border-radius: 20px;
     box-shadow: 0 10px 20px rgba(52, 53, 70,0.19), 0 6px 6px rgba(52, 53, 70,.23);
     margin: 50px 0;
     padding: 30px 15px;
@@ -123,11 +126,13 @@ Accent: rgba(93, 217, 193, 1);
 .work-2 {
     background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/dubco.jpeg);
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .work-3 {
     background: linear-gradient(rgba(222, 223, 242, .8), rgba(222, 223, 242, .8)), url(../img/clearbrook.jpeg);
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .content-card-location {
