@@ -152,7 +152,7 @@ Accent: rgba(93, 217, 193, 1);
     color: rgba(202, 203, 220, 1);
     display: flex;
     flex-flow: column wrap;
-    height: 7vh;
+    height: 10vh;
     justify-content: center;
     text-align: center;
 }
