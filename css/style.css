@@ -150,10 +150,8 @@ Accent: rgba(93, 217, 193, 1);
 .footer {
     background: rgba(52, 53, 70, 1);
     color: rgba(202, 203, 220, 1);
-    display: flex;
-    flex-flow: column wrap;
-    height: 10vh;
-    justify-content: center;
+    height: auto;
+    padding: 10px 0;
     text-align: center;
 }
 
