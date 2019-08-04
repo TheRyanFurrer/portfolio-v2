@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Ryan Furrer</title>
 </head>
-<body>
+<body class="fluid-type">
     <div class="content">
         <header class="header">
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li id="name-link" class="nav-item"><a href="#">Ryan Furrer</a></li>
-                    <li class="nav-item right-nav-link-margin"><a href="#">Skills</a></li>
-                    <li class="nav-item right-nav-link-margin"><a href="#">Work</a></li>
-                    <li class="nav-item right-nav-link-margin"><a href="#">About</a></li>
-                </ul>
-            </nav>
             <div class="banner">
                 <h1 class="title">Ryan Furrer</h1>
                 <h3 class="tag-line">A Front-End Web Developer</h3>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#skills">Skills</a></li>
+                        <li class="nav-item"><a href="#work">Work</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
+
+        <main class="main-content">
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <p>Below is an ever-expanding list of langauges that I have learned or am currently learning.</p>
+                <div class="skills-container">
+                    <img id="html" class="language-logo" src="/img/langauge-logos/html5-logo.svg" alt="HTML5 Logo">
+                    <img class="language-logo" src="/img/langauge-logos/css3-logo.svg" alt="CSS3 Logo">
+                    <!-- <img class="language-logo" src="/img/langauge-logos/sass-logo.svg" alt="SASS Logo"> -->
+                    <img class="language-logo" src="/img/langauge-logos/javascript-logo.svg" alt="JavaScript Logo">
+                    <!-- <img class="language-logo" src="/img/langauge-logos/react-logo.svg" alt="React Logo"> -->
+                </div>
+            </section>
+
+            <section id="work" class="work">
+
+            </section>
+
+            <section id="about" class="about">
+
+            </section>
+        </main>
     </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; Ryan Furrer 2019</p>
+    </footer>
 
 </body>
 </html>
