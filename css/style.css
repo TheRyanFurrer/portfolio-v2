@@ -2,6 +2,7 @@
     --white: hsla(0, 0%, 100%, 1);
     --white-transparent: hsla(0, 0%, 100%, .65);
     --light-gray: hsla(0, 0%, 95%, 1);
+    --medium-gray: hsla(0, 0%, 85%, 1);
 }
 
 /*-----Fonts-----*/
@@ -95,13 +96,16 @@ h2 {
     width: 65%;
 }
 
-.skills {
-    height: 100vh;
+.section-title {
     padding-top: 50px;
     text-align: center;
 }
 
-.skills-container {
+.skills {
+    height: 100vh;
+}
+
+.content-container {
     background: var(--white-transparent);
     border-radius: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -121,6 +125,22 @@ h2 {
 
 .language-logo {
     width: 50%;
+}
+
+.work {
+    height: 100vh;
+}
+
+.work-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.work-links a {
+    border-radius: 8px;
+    color: blue;
+    padding: 5px;
 }
 
 .footer {
