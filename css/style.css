@@ -16,7 +16,7 @@ font-family: 'Raleway', sans-serif; */
 * {
 box-sizing: border-box;
 font-family: 'Raleway', sans-serif;
-/* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 line-height: 1.5;
 list-style: none;
 margin: 0;
@@ -44,12 +44,8 @@ a:hover {
 
 h1,
 h2 {
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', sans-serif;
 }
-
-/* .fluid-type {
-    font-size: 0.875rem;
-} */
 
 .content {
     flex: 1 0 auto;
@@ -67,14 +63,17 @@ h2 {
     align-items: center;
     color: var(--white);
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
+.title {
+    font-size: 3rem;
+}
+
 .tag-line {
     color: var(--white);
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -128,7 +127,7 @@ h2 {
 
 .skills img {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 #html {
@@ -176,7 +175,8 @@ h2 {
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    border-radius: 8px;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -207,6 +207,7 @@ h2 {
 
 .form-style input[type="submit"],
 .form-style input[type="button"]{
+    border-radius: 8px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -223,7 +224,7 @@ h2 {
 }
 .form-style input[type="submit"]:hover,
 .form-style input[type="button"]:hover{
-	background: var(--body-link-hover-color);
+    background: var(--body-link-hover-color);
 }
 
 
@@ -233,14 +234,6 @@ h2 {
 }
 
 /*-----Media Queries-----*/
-@media screen and (min-width: 20rem) {
-    .fluid-type {
-        font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
-    }
-}
-
-    @media screen and (min-width: 80rem) {
-    .fluid-type {
-        font-size: 1.375rem;
-    }
+@media screen and (min-width: 719px) {
+    
 }
