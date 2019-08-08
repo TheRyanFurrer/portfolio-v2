@@ -105,6 +105,7 @@ h2 {
 /*-----Main Content Styles-----*/
 
 .main-content {
+    grid-template-rows: auto;
     margin: 0 auto;
     text-align: center;
     width: 95%;
@@ -120,22 +121,28 @@ h2 {
     border-radius: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.17);
     margin: 50px auto;
-    padding: 25px 5px;
+    padding: 25px 15px;
     text-align: center;
-    width: 80%;
-}
-
-.skills img {
-    padding-top: 10px;
-    padding-bottom: 25px;
-}
-
-#html {
-    width: 70%; /* This logo is a different size, thus a special width modifier */
+    width: 95%;
 }
 
 .language-logo {
+    padding-top: 10px;
+    padding-bottom: 25px;
     width: 50%;
+}
+
+.work-img-container {
+    width: 100%;
+}
+
+.work-img {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.17);
+    width: 100%;
+}
+
+.work-title {
+    margin-top: 10px;
 }
 
 .work-links-container {
@@ -172,10 +179,10 @@ h2 {
 .form-style textarea,
 .form-style select 
 {
-	-webkit-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.100ms ease-in-out;
+	-moz-transition: all 0.100ms ease-in-out;
+	-ms-transition: all 0.100ms ease-in-out;
+    -o-transition: all 0.100ms ease-in-out;
     border-radius: 8px;
 	outline: none;
 	box-sizing: border-box;
@@ -235,5 +242,29 @@ h2 {
 
 /*-----Media Queries-----*/
 @media screen and (min-width: 719px) {
-    
+    .main-content {
+        width: 80%;
+    }
+
+    #skills-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .language-logo {
+        margin: 0 auto;
+        max-width: 25%;
+    }
+
+    .goals-description {
+        margin: 0 auto;
+        text-align: center;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .language-logo {
+        max-width: 20%;
+    }
 }
