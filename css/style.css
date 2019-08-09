@@ -102,6 +102,11 @@ h2 {
     color: var(--white);
 }
 
+#nav-social-links {
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
 /*-----Main Content Styles-----*/
 
 .main-content {
@@ -179,10 +184,10 @@ h2 {
 .form-style textarea,
 .form-style select 
 {
-	-webkit-transition: all 0.100ms ease-in-out;
-	-moz-transition: all 0.100ms ease-in-out;
-	-ms-transition: all 0.100ms ease-in-out;
-    -o-transition: all 0.100ms ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     border-radius: 8px;
 	outline: none;
 	box-sizing: border-box;
@@ -261,10 +266,19 @@ h2 {
         text-align: center;
         width: 85%;
     }
+
+    .work-img {
+        filter: saturate(25%);
+        transition: filter .25s ease-in-out;
+    }
+
+    .work-img:hover {
+        filter: saturate(100%);
+    }
 }
 
 @media screen and (min-width: 1021px) {
     .language-logo {
-        max-width: 20%;
+        max-width: 15%;
     }
 }
