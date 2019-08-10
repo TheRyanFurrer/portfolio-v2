@@ -8,104 +8,120 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Ryan Furrer</title>
 </head>
-<body class="fluid-type">
-    <div class="content">
-        <header class="header">
-            <div class="banner">
-                <img class="profile-img" src="img/Profile Pic.jpg" alt="Image of Ryan Furrer">
-                <h1 class="title">Ryan Furrer</h1>
-                <h3 class="tag-line">A Front-End Web Developer</h3>
-                <nav class="nav-bar">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#skills">Skills</a></li>
-                        <li class="nav-item"><a href="#work">Work</a></li>
-                        <li class="nav-item"><a href="#blog">Blog</a></li>
-                        <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
-                    </ul>
-                    <ul class="nav-list">
-                        <li id="nav-social-links" class="nav-item"><a href="https://github.com/ryanfurrer" target="_blank">GitHub</a></li>
-                        <li id="nav-social-links" class="nav-item"><a href="https://dev.to/ryan_furrer" target="_blank">DEV Blog</a></li>
-                    </ul>
-                </nav>
+<body>
+    <header class="header">
+        <div class="banner">
+            <img class="profile-img" src="img/Profile Pic.jpg" alt="Image of Ryan Furrer">
+            <h1 class="title">Ryan Furrer</h1>
+            <h3 class="tag-line">A Front-End Web Developer</h3>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#work">Work</a></li>
+                    <li class="nav-item"><a href="#blog">Blog</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li id="nav-social-links" class="nav-item"><a href="https://github.com/ryanfurrer" target="_blank">GitHub</a></li>
+                    <li id="nav-social-links" class="nav-item"><a href="https://dev.to/ryan_furrer" target="_blank">DEV Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="skills" class="skills section-title">
+            <h2>Skills</h2>
+            <p>Below is an ever-expanding list of langauges that I have learned or am currently learning.</p>
+            <div id="skills-container" class="content-container">
+                <img class="language-logo" src="/img/langauge-logos/html5-logo.svg" alt="HTML5 Logo">
+                <img class="language-logo" src="/img/langauge-logos/css3-logo.svg" alt="CSS3 Logo">
+                <!-- <img class="language-logo" src="/img/langauge-logos/sass-logo.svg" alt="SASS Logo"> -->
+                <img class="language-logo" src="/img/langauge-logos/javascript-logo.svg" alt="JavaScript Logo">
+                <!-- <img class="language-logo" src="/img/langauge-logos/react-logo.svg" alt="React Logo"> -->
+                <p class="goals-description">I am currently working on learning SASS & React in addition to becoming more proficcient a the above-mentioned skills.</p>
             </div>
-        </header>
+        </section>
 
-        <main class="main-content">
-            <section id="skills" class="skills section-title">
-                <h2>Skills</h2>
-                <p>Below is an ever-expanding list of langauges that I have learned or am currently learning.</p>
-                <div id="skills-container" class="content-container">
-                    <img class="language-logo" src="/img/langauge-logos/html5-logo.svg" alt="HTML5 Logo">
-                    <img class="language-logo" src="/img/langauge-logos/css3-logo.svg" alt="CSS3 Logo">
-                    <!-- <img class="language-logo" src="/img/langauge-logos/sass-logo.svg" alt="SASS Logo"> -->
-                    <img class="language-logo" src="/img/langauge-logos/javascript-logo.svg" alt="JavaScript Logo">
-                    <!-- <img class="language-logo" src="/img/langauge-logos/react-logo.svg" alt="React Logo"> -->
-                    <p class="goals-description">I am currently working on learning SASS & React in addition to becoming more proficcient a the above-mentioned skills.</p>
-                </div>
-            </section>
-
-            <section id="work" class="work section-title">
-                <h2>Work</h2>
-                <p>I have a huge list of personal projects I am currently or want to work on to better my skills. Below are some that are complete or in progress.</p>
-                <div class="content-container">
+        <section id="work" class="work section-title">
+            <h2>Work</h2>
+            <p>I have a huge list of personal projects I am currently or want to work on to better my skills. Below are some that are complete or in progress.</p>
+            
+            <div id="work-content-container" class="content-container">
+                <section class="work-projects-container">
                     <div class="work-img-container">
                         <a href="https://eztoggle.netlify.com/" target="_blank"><img class="work-img" src="/img/ezToggle.jpg" alt="ezToggle homepage"></a>
+                    </div>                    
+                    <div class="project-container">
+                        <h3 class="work-title">ezToggle</h3>
+                        <p>This is a simple light/dark them toggle I created to practice JavaScript and implement in my existing and future sites.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="work-links" href="https://eztoggle.netlify.com/" target="_blank">Live Site</a></p>
+                            <p><a class="work-links" href="https://github.com/ryanfurrer/ezToggle" target="_blank">GitHub</a></p>
+                        </div>
                     </div>
-                    <h3 class="work-title">ezToggle</h3>
-                    <p>This is a simple light/dark them toggle I created to practice JavaScript and implement in my existing and future sites.</p>
-                    <p>Skills used: HTML, CSS, JavaScript</p>
-                    <div class="work-links-container">
-                        <p><a class="work-links" href="https://eztoggle.netlify.com/" target="_blank">Live Site</a></p>
-                        <p><a class="work-links" href="https://github.com/ryanfurrer/ezToggle" target="_blank">GitHub</a></p>
-                    </div>
-
+                </section>
+            
+                <section class="work-projects-container">
                     <div class="work-img-container">
                         <a href="#" target="_blank"><img class="work-img" src="/img/dubco.jpeg" alt="doMore homepage"></a>
                     </div>
-                    <h3 class="work-title">doMore - WIP</h3>
-                    <p>A very basic to-do list that let's you add, remove, and move items up and down a list. I created this to practice JavaScript.</p>
-                    <p>Skills used: HTML, CSS, JavaScript</p>
-                    <div class="work-links-container">
-                        <p><a class="work-links" href="https://do-more.netlify.com/" target="_blank">Live Site</a></p>
-                        <p><a class="work-links" href="https://github.com/ryanfurrer/doMore" target="_blank">GitHub</a></p>
+                    <div class="project-container">
+                        <h3 class="work-title">doMore - WIP</h3>
+                        <p>A very basic to-do list that let's you add, remove, and move items up and down a list. I created this to practice JavaScript.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="work-links" href="https://do-more.netlify.com/" target="_blank">Live Site</a></p>
+                            <p><a class="work-links" href="https://github.com/ryanfurrer/doMore" target="_blank">GitHub</a></p>
+                        </div>
                     </div>
+                </section>
+            
+                <section class="work-projects-container">
                     <div class="work-img-container">
                         <a href="https://wsdo.netlify.com/" target="_blank"><img class="work-img" src="/img/wsdo.png" alt="WSDO homepage"></a>
                     </div>
-                    <h3 class="work-title">Wally's Organics - WIP</h3>
-                    <p>A local business' website that I built so they had more of a web prescense than Social Media.</p>
-                    <br>
-                    <p>This was a more involved project as it included multiple pages, a dropdown menu, and a recipes page that gets new additions from time to time.</p>
-                    <p>Skills used: HTML, CSS, JavaScript</p>
-                    <div class="work-links-container">
-                        <p><a class="work-links" href="https://wsdo.netlify.com/">Live Site</a></p>
-                        <p><a class="work-links" href="https://github.com/ryanfurrer/wsdo" target="_blank">GitHub</a></p>
+
+                    <div class="project-container">
+                        <h3 class="work-title">Wally's Organics - WIP</h3>
+                        <p>A local business' website that I built so they had more of a web prescense than Social Media.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="work-links" href="https://wsdo.netlify.com/">Live Site</a></p>
+                            <p><a class="work-links" href="https://github.com/ryanfurrer/wsdo" target="_blank">GitHub</a></p>
+                        </div>
                     </div>
+                </section>
+                    
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="blog" class="blog section-title">
-                    <h3>Blog</h3>
-                    <p>I write a blog hosted on DEV, here are a few of my favorite articles I've written and you can see more <a href="https://dev.to/ryan_furrer" target="_blank">here</a></p>
-                <div class="content-container">
-                    <article class="blog-post-summary">
+        <section id="blog" class="blog section-title">
+                <h2>Blog</h2>
+                <p>I write a blog hosted on dev.to and here are a few of my favorite articles I've written. If you'd like to see more click <a href="https://dev.to/ryan_furrer" target="_blank">here</a></p>
+            <div class="content-container">
+                <article class="blog-post-summary">
+                    <p>Insert Article Here</p>
+                </article>
+                <article class="blog-post-summary">
                         <p>Insert Article Here</p>
-                    </article>
-                    <article class="blog-post-summary">
-                            <p>Insert Article Here</p>
-                    </article>
-                    <article class="blog-post-summary">
-                        <p>Insert Article Here</p>
-                    </article>
-                </div>
-            </section>
+                </article>
+                <article class="blog-post-summary">
+                    <p>Insert Article Here</p>
+                </article>
+            </div>
+        </section>
 
+        <div class="about-contact-container">
             <section id="about" class="about section-title">
-                <h3>About</h3>
+                <h2>About</h2>
                 <p>Find out a bit more about me</p>
                 <div class="content-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sequi consequatur, soluta animi reprehenderit enim beatae pariatur voluptatibus, modi quo aspernatur voluptatum temporibus delectus, natus recusandae ducimus eveniet tempore doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sequi consequatur, soluta animi reprehenderit enim beatae pariatur voluptatibus, modi quo aspernatur voluptatum temporibus delectus, natus recusandae ducimus eveniet tempore doloribus!</p>
+                    <p>Thanks very much for visiting my portfolio site!<br> A bit about me: I am a 27 year old Front-End Developer looking for my first job in this exciting field. Coding has always interested me but I've never acted on it until June 2019 when I started my studies with <a href="https://teamtreehouse.com/home" target="_blank">Treehouse</a>.<hr>
+                    Creative problem solving & being creative in general are things I <em>love</em> and Front-End Web Development is a fantastic outlet for that. I hope to become a Full-Stack Web Developer in the future but for now would love to bring new, exuberant, passionate energy to your team.</p>
                 </div>
             </section>
 
@@ -123,8 +139,9 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
+
 
     <footer class="footer">
         <p>Copyright &copy; Ryan Furrer 2019</p>
