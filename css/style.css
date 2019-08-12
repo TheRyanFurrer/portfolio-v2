@@ -32,6 +32,34 @@ body {
     height: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--body-link-hover-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--body-link-color);
+    border-radius: 10px;
+    outline: 1px solid var(--body-link-hover-color);
+}
+
+textarea::-webkit-scrollbar {
+    width: .5em;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--body-link-hover-color);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: var(--body-link-color);
+    border-radius: 10px;
+    outline: 1px solid var(--body-link-hover-color);
+}
+
 a {
     color: var(--body-link-color);
     text-decoration: underline;
