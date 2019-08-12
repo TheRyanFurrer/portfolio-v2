@@ -222,7 +222,8 @@ hr {
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
 	margin: 10px auto;
-	padding: 16px;
+    padding: 16px;
+    text-align: left;
 }
 
 .form-style input[type="text"],
@@ -308,14 +309,13 @@ hr {
 #back-to-top-btn {
     background: var(--body-link-color);
     border-radius: 7px;
-    color: var(--white-transparent);
-    padding: 5px;
+    color: var(--white);
+    padding: 5px 10px;
     transition: all .25s ease;
 }
 
 #back-to-top-btn:hover {
     background: var(--body-link-hover-color);
-    color: var(--white);
 }
 
 /*-----Media Queries-----*/
@@ -445,10 +445,10 @@ hr {
     }
 
     #about {
-        width: 60%;
+        width: 50%;
     }
 
     #contact {
-        width: 40%;
+        width: 50%;
     }
 }

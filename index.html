@@ -166,10 +166,19 @@
                 <div class="content-container">            
                     <div class="form-style">
                         <form name="contact" method="POST" data-netlify="true">
-                        <input type="text" name="field1" placeholder="Your Name">
-                        <input type="email" name="field2" placeholder="Email Address">
-                        <textarea name="field3" placeholder="Message here..."></textarea>
-                        <input type="submit" value="Send">
+                            <label>Name:
+                                <input type="text" name="name">
+                            </label>
+
+                            <label>Email:
+                                <input type="email" name="email">
+                            </label>
+
+                            <label>Message:
+                                <textarea name="message"></textarea>
+                            </label>
+
+                            <input type="submit" value="Send">
                         </form>
                     </div>
                 </div>
