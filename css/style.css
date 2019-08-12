@@ -54,6 +54,11 @@ hr {
 
 /*-----Header Styles-----*/
 
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .header{
     background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     height: 100vh;
@@ -61,6 +66,7 @@ hr {
 }
 
 .banner {
+    animation: fadein 1s;
     align-items: center;
     color: var(--white);
     display: flex;
@@ -69,7 +75,7 @@ hr {
     justify-content: center;
 }
 
-.profile-img{
+.profile-img {
     border-radius: 100%;
     box-shadow: inset 0px 4px 4px hsla(0, 0%, 0%, .3);
     margin-bottom: 25px;
@@ -81,6 +87,7 @@ hr {
 }
 
 .tag-line {
+    animation-delay: 3s;
     color: var(--white);
     text-align: center;
 }
@@ -113,7 +120,7 @@ hr {
 .social-nav-list {
     display: flex;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
 }
 
 .nav-social-links {
@@ -205,7 +212,9 @@ hr {
     margin-bottom: 0;
 }
 
-.blog-img {
+.blog-img {    
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10),
+    0 3px 6px rgba(0, 0, 0, 0.17);
     width: 100%;
 }
 
@@ -290,6 +299,10 @@ hr {
     justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.footer a {
+    margin: 5px 0;
 }
 
 #back-to-top-btn {
