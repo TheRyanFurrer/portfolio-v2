@@ -189,10 +189,14 @@ hr {
 }
 
 .content-container {
+    align-items: center;
     background: var(--white-transparent);
     border-radius: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10),
             0 3px 6px rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     margin: 50px auto;
     padding: 25px 15px;
     text-align: center;
