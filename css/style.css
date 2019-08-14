@@ -337,6 +337,7 @@ hr {
 
 
 .footer {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     flex-shrink: 0;
