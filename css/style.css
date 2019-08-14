@@ -111,7 +111,7 @@ hr {
 }
 
 .banner {
-    animation: fadein 1s;
+    animation: fadein 1.5s;
     align-items: center;
     color: var(--white);
     display: flex;
