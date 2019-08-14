@@ -511,13 +511,14 @@ hr {
     .about-contact-container {
         align-items: baseline;
         display: flex;
+        justify-content: center;
     }
 
     #about {
-        width: 50%;
+        width: 40%;
     }
 
     #contact {
-        width: 50%;
+        width: 40%;
     }
 }
