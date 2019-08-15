@@ -26,7 +26,7 @@ h3 {
 
 p,
 a {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 /*-----Document-Wide Styles-----*/
@@ -134,6 +134,7 @@ hr {
 .tag-line {
     animation-delay: 3s;
     color: var(--white);
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -165,7 +166,7 @@ hr {
 .social-nav-list {
     display: flex;
     margin: 0 auto;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .nav-social-links {
@@ -200,13 +201,20 @@ hr {
     margin: 50px auto;
     padding: 25px 15px;
     text-align: center;
-    width: 95%;
+    width: 90%;
+}
+
+.skills-container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .language-logo {
     padding-top: 10px;
     padding-bottom: 25px;
-    width: 50%;
+    width: 37.5%;
 }
 
 .work-projects-container {
@@ -391,14 +399,9 @@ hr {
         width: 80%;
     }
 
-    #skills-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
     .language-logo {
         margin: 0 auto;
-        max-width: 25%;
+        max-width: 37.5%;
     }
 
     .goals-description {
@@ -462,7 +465,8 @@ hr {
         max-width: 15%;
     }
 
-    .section-title > p {
+    .section-title > p,
+    .goals-description {
         margin: 0 auto;
         width: 60%;
     }
@@ -470,7 +474,7 @@ hr {
     .language-logo {
         max-width: 15%;
     }
-    
+
     .work-projects-container {
         display: flex;
         flex-flow: row wrap;
