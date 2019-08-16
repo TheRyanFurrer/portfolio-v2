@@ -350,9 +350,9 @@ hr {
     background: var(--body-link-hover-color);
 }
 
-.recaptcha {
-    text-align: center;
-}
+.recaptcha .g-recaptcha > div {
+    margin: 0 auto;
+ }
 
 .g-captcha {    
     display: inline-block;
