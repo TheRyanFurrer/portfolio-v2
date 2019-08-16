@@ -276,7 +276,9 @@ hr {
 }
 
 .form-style {
-	margin: 10px auto;
+    margin: 10px auto;
+    min-width: 100%;
+    max-width: 100%;
     padding: 16px;
     text-align: left;
 }
