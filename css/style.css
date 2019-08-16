@@ -342,6 +342,7 @@ hr {
     transition: background .25s ease-in-out;
     cursor: pointer;
     font-size: 1.25rem;
+    margin-bottom: 25px;
 }
 
 .form-style input[type="submit"]:hover,
@@ -349,7 +350,7 @@ hr {
     background: var(--body-link-hover-color);
 }
 
-.g-recaptcha {
+.recaptcha {
     margin: 0 auto;
     min-width: 100%;
     max-width: 100%;
