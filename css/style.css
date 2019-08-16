@@ -349,6 +349,12 @@ hr {
     background: var(--body-link-hover-color);
 }
 
+.g-recaptcha {
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 100%;
+}
+
 
 .footer {
     align-items: center;
