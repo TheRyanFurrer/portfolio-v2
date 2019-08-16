@@ -351,11 +351,14 @@ hr {
 }
 
 .recaptcha {
+    text-align: center;
+}
+
+.g-captcha {    
     display: inline-block;
     margin: 0 auto;
     min-width: 100%;
     max-width: 100%;
-    text-align: center;
 }
 
 
