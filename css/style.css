@@ -293,18 +293,12 @@ hr {
 .form-style input[type="url"],
 .form-style textarea,
 .form-style select {
-    -webkit-transition: box-shadow 0.25s ease-in-out,
+    -webkit-transition,
+    -moz-transition,
+    -ms-transition,
+    -o-transition: box-shadow 0.25s ease-in-out,
                                     padding 0.25s ease-in-out,
                                     border 0.25s ease-in-out;
-	-moz-transition: box-shadow 0.25s ease-in-out,
-                                padding 0.25s ease-in-out,
-                                border 0.25s ease-in-out;
-	-ms-transition: box-shadow 0.25s ease-in-out,
-                            padding 0.25s ease-in-out,
-                            border 0.25s ease-in-out;
-    -o-transition: box-shadow 0.25s ease-in-out,
-                            padding 0.25s ease-in-out,
-                            border 0.25s ease-in-out;
     border-radius: 8px;
 	outline: none;
 	box-sizing: border-box;
@@ -315,7 +309,9 @@ hr {
 	margin-bottom: 4%;
 	border: 1px solid #ccc;
 	padding: 3%;
-	color: #555;
+    color: #555;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .form-style input[type="text"]:focus,
