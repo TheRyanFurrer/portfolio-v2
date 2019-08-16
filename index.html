@@ -167,7 +167,7 @@
                 <!-- <p>Fill out the form below if you'd like to get in touch</p> -->
                 <div class="content-container">            
                     <div class="form-style">
-                        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
                             <label>Name:
                                 <input type="text" name="name">
                             </label>
@@ -179,9 +179,10 @@
                             <label>Message:
                                 <textarea name="message"></textarea>
                             </label>
-
                             <input type="submit" value="Send">
+                            <div data-netlify-recaptcha="true"></div>                           
                         </form>
+                        
                     </div>
                 </div>
             </section>
