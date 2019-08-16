@@ -351,9 +351,11 @@ hr {
 }
 
 .recaptcha {
+    display: inline-block;
     margin: 0 auto;
     min-width: 100%;
     max-width: 100%;
+    text-align: center;
 }
 
 
