@@ -130,7 +130,7 @@ hr {
     text-align: center;
 }
 
-.profile-img {
+.logo {
     border-radius: 100%;
     margin-bottom: 25px;
     max-width: 50%;
@@ -167,6 +167,10 @@ hr {
     padding-top: 50px;
     text-align: center;
     width: 95%;
+}
+
+.sidebar-nav {
+    display: none;
 }
 
 .section-title > h2 {
@@ -384,13 +388,18 @@ hr {
         font-size: 20px;
     }
 
-    .profile-img {
+    .logo {
         max-width: 25%;
     }
 
     .main-content {
         max-width: 2560px;
         width: 80%;
+    }
+
+    .sidebar-nav {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .language-logo {
@@ -421,15 +430,8 @@ hr {
     }
 
     .form-style input[type="text"],
-    .form-style input[type="date"],
-    .form-style input[type="datetime"],
     .form-style input[type="email"],
-    .form-style input[type="number"],
-    .form-style input[type="search"],
-    .form-style input[type="time"],
-    .form-style input[type="url"],
-    .form-style textarea,
-    .form-style select {
+    .form-style textarea {
         font-size: 1.25rem;
     }
 
@@ -438,7 +440,7 @@ hr {
         font-size: 1.5rem;
 }
 
-    .profile-img {
+    .logo {
         max-width: 15%;
     }
 
