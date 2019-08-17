@@ -397,10 +397,10 @@ hr {
         width: 80%;
     }
 
-    .sidebar-nav {
+    /* .sidebar-nav {
         display: flex;
         justify-content: flex-end;
-    }
+    } */
 
     .language-logo {
         margin: 0 auto;
