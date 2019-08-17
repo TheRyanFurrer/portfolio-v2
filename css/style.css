@@ -293,12 +293,6 @@ hr {
 .form-style input[type="url"],
 .form-style textarea,
 .form-style select {
-    -webkit-transition,
-    -moz-transition,
-    -ms-transition,
-    -o-transition: box-shadow 0.25s ease-in-out,
-                                    padding 0.25s ease-in-out,
-                                    border 0.25s ease-in-out;
     border-radius: 8px;
 	outline: none;
 	box-sizing: border-box;
@@ -393,6 +387,32 @@ hr {
 }
 
 /*-----Media Queries-----*/
+
+
+/*-----These cale the Google reCAPTCHA so it does not overflow beyond the containng div-----*/
+@media screen and (max-width: 430px) {
+    .recaptcha {
+        transform: scale(.9);
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .recaptcha {
+        transform-origin: left;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .recaptcha {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .recaptcha {
+        transform: scale(.7); /* This takes you all the way to 320px (the smallest width you'll deal with) */
+    }
+}
 
 @media screen and (max-width: 524px) {
     .footer {
