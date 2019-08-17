@@ -448,10 +448,6 @@ hr {
         width: 85%;
     }    
 
-    #work-content-container {
-        padding-right: 0;
-    }
-
     .work-img {
         filter: saturate(25%);
         transition: filter .25s ease-in-out;
