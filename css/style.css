@@ -1,20 +1,23 @@
 /*--------------------Root Element Styles--------------------
 Also contains CSS Variables for styling ease*/
 :root {
+    font-size: 16px;
     --white: hsla(0, 0%, 100%, 1);
     --white-transparent: hsla(0, 0%, 100%, .65);
     --light-gray: hsla(0, 0%, 95%, 1);
-    --medium-gray: hsla(0, 0%, 85%, 1);
-    --black: hsla(0, 0%, 0%, 1);
-
-    --light-theme-link-hover-color: hsla(0, 0%, 30%, .65);
-    --light-theme-text-color: hsla(0, 0%, 30%, 1);
+    --light-gray-transparent: hsla(0, 0%, 95%, .65);
+    --medium-gray: hsla(0, 0%, 85%, 1); 
+    --medium-gray-transparent: hsla(0, 0%, 85%, .65);    
+    --dark-gray: hsla(0, 0%, 30%, 1);
+    --dark-gray-transparent: hsla(0, 0%, 30%, .65);
+    --darker-gray: hsla(0, 0%, 20%, 1);
+    --darkest-gray: hsla(0, 0%, 10%, 1);
 
     /*-----Brand Colors-----*/
+    --brand-color-lightest: hsla(233, 49%, 76%, 1);
     --brand-color-light: hsla(233, 49%, 71%, 1);
     --brand-color-main: hsla(235, 50%, 59%, 1);
     --brand-color-dark: hsla(234, 34%, 49%, 1);
-    font-size: 16px;
 }
 
 /*--------------------Fonts--------------------*/
@@ -62,13 +65,13 @@ text-decoration: none;
 /*----------Body Color & Layout (Mobile First)----------*/
 body {
     background: var(--light-gray);
-    color: var(--light-theme-text-color);
+    color: var(--dark-gray);
     display: flex;
     flex-direction: column;
 }
 
 ::selection {
-    background: var(--light-theme-text-color);
+    background: var(--dark-gray);
     color: var(--white);
 }
 
@@ -79,18 +82,6 @@ body {
     to {opacity: 1;}
 }
 
-.nav-link { /*-----Styles navigation links in header & footer-----*/
-    color: var(--light-theme-link-hover-color);
-    text-decoration: none;
-    transition: color .5s ease,
-                border .05s ease;
-}
-
-.nav-link:hover {
-    border-bottom: 2px solid hsla(0, 0%, 30%, 1);
-    color: hsla(0, 0%, 30%, 1);
-}
-
 .body-link { /*-----Styles links in the body-----*/
     color: var(--brand-color-main);
     text-decoration: underline;
@@ -99,6 +90,14 @@ body {
 
 .body-link:hover {
     color: var(--brand-color-dark);
+}
+
+.body-link-dark {
+    color: var(--brand-color-lightest);
+}
+
+.body-link-dark:hover {
+    color: var(--brand-color-light);
 }
 
 .thumbnail { /*-----Styles images in body such as the work and blog snapshots-----*/
@@ -115,7 +114,12 @@ hr {
 /*--------------------Header Styles--------------------*/
 
 .header {
-    background-image: linear-gradient(to top, var(--light-gray) 0%, hsla(0, 0%, 65%, 1) 100%);
+    background-image: linear-gradient(to top, var(--light-gray) 0%, var(--medium-gray) 100%);
+    height: 100vh;
+}
+
+.header-dark {
+    background-image: linear-gradient(to top, var(--darkest-gray) 0%, var(--dark-gray)100%);
     height: 100vh;
 }
 
@@ -130,6 +134,10 @@ hr {
     text-align: center;
 }
 
+.banner-dark {
+    color: var(--light-gray);
+}
+
 .logo {
     border-radius: 100%;
     margin-bottom: 25px;
@@ -137,7 +145,12 @@ hr {
 }
 
 .tag-line {
-    font-size: 1.5rem;    
+    color: var(--brand-color-main);
+    font-size: 1.5rem; 
+}
+
+.tag-line-dark {
+    color: var(--brand-color-light);
 }
 
 .nav-list {
@@ -148,6 +161,27 @@ hr {
 .nav-item {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.nav-link { /*-----Styles navigation links in header & footer-----*/
+    color: var(--dark-gray-transparent);
+    text-decoration: none;
+    transition: color .5s ease,
+                border .05s ease;
+}
+
+.nav-link-dark {
+    color: var(--medium-gray-transparent);
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.nav-link-dark:hover {
+    border-bottom: 2px solid var(--medium-gray);
+    color: var(--medium-gray);
 }
 
 .social-nav-list {
@@ -161,6 +195,11 @@ hr {
 }
 
 /*--------------------Main Content Styles--------------------*/
+
+.dark {
+    background: var(--darkest-gray);
+    color: var(--light-gray);
+}
 
 .main-content {
     margin: 0 auto;
@@ -190,6 +229,10 @@ hr {
     padding: 25px 15px;
     text-align: center;
     width: 90%;
+}
+
+.content-container-dark {
+    background: var(--darker-gray);
 }
 
 /*----------Skills Section Styling----------*/
@@ -263,7 +306,8 @@ hr {
 .form-style input[type="email"],
 .form-style textarea {
 	background: var(--white);
-	border: 1px solid var(--medium-gray);
+    border: 1px solid var(--medium-gray);
+    color: var(--darkest-gray);
     border-radius: 8px;
 	margin-bottom: 4%;
     min-width: 100%;
@@ -272,12 +316,26 @@ hr {
 	padding: 3%;
 }
 
+.form-style-dark input[type="text"],
+.form-style-dark input[type="email"],
+.form-style-dark textarea {
+	background: var(--medium-gray);
+    border: 1px solid var(--darkest-gray);
+}
+
 .form-style input[type="text"]:focus,
 .form-style input[type="email"]:focus,
 .form-style textarea:focus {
 	box-shadow: 0 0 5px var(--brand-color-dark);
 	padding: 3%;
 	border: 1px solid var(--brand-color-dark);
+}
+
+.form-style-dark input[type="text"]:focus,
+.form-style-dark input[type="email"]:focus,
+.form-style-dark textarea:focus {
+	box-shadow: 0 0 5px var(--brand-color-lightest);
+	border: 1px solid var(--brand-color-light);
 }
 
 .form-style input[type="submit"] {
@@ -294,10 +352,19 @@ hr {
 	width: 100%;
 }
 
-.form-style input[type="submit"]:hover,
-.form-style input[type="button"]:hover{
+.form-style-dark input[type="submit"] {
+    background: var(--brand-color-lightest);
+    color: var(--darker-gray);
+}
+
+.form-style input[type="submit"]:hover {
     background: var(--brand-color-dark);
     color: var(--white);
+}
+
+.form-style-dark input[type="submit"]:hover {
+    background: var(--brand-color-light);
+    color: var(--darker-gray);
 }
 
 /*-----reCAPTCHA Styling-----*/
