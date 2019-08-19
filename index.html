@@ -4,79 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ryan Furrer</title>
+    <meta name="Description" content="A Junior Front-End Web Developer">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Ryan Furrer</title>
 </head>
-    <body>
-        <header>
-            <nav class="main-nav">
-                <ul class="nav-list" id="#top"></ul>
-                    <li class="nav-item"><a href="#top" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+<body>
+    <header id="top" class="header">
+        <div class="banner">
+            <img class="logo" src="img/logo_transparent_no-text-cropped-in.png"  alt="Image of Ryan Furrer">
+            <h1 class="title">Ryan Furrer</h1>
+            <h3 class="tagline">A Front-End Web Developer</h3>
+            <!-- <button class="theme-change-button">Change Theme</button> -->
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#contact">Contact</a></li>
+                </ul>
+                <ul class="social-nav-list nav-list">
+                    <li class="nav-social-links"><a class="nav-link"   href="https://github.com/ryanfurrer" target="_blank" rel="noreferrer">GitHub</a></li>
+                    <li class="nav-social-links"><a class="nav-link"   href="https://www.linkedin.com/in/rfurrer/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    <li class="nav-social-links"><a class="nav-link"   href="https://dev.to/ryan_furrer" target="_blank" rel="noreferrer">DEV Blog</a></li>
                 </ul>
             </nav>
-            <div class="banner">
-                <h1 class="title">Ryan Furrer</h1>
-                <h3 class="tagline">Front-End Web Developer</h3>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="sidebar-nav">
+            <ul class="sidebar-nav-list">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+        <section id="skills" class="section-title">
+            <h2>Skills</h2>
+            <p>Below is an ever-expanding list of languages that I have learned or am currently learning.</p>
+            <div class="skills-container content-container">
+                <img class="language-logo" src="/img/langauge-logos/html5-logo.svg"  alt="HTML5 Logo">
+                <img class="language-logo" src="/img/langauge-logos/css3-logo.svg"  alt="CSS3 Logo">                
+                <img class="language-logo" src="/img/langauge-logos/javascript-logo.svg"  alt="JavaScript Logo">
+                <img class="language-logo" src="/img/langauge-logos/sass-logo.svg" alt="SASS Logo">
+                <img class="language-logo" src="/img/langauge-logos/react-logo.svg" alt="React Logo">
+                <img class="language-logo" src="/img/langauge-logos/github-logo.svg" alt="GitHub Cat Logo">
+                <p class="goals-description">I am currently working on learning SASS & React in addition to becoming more proficient at the above-mentioned skills.</p>
             </div>
-        </header>
-
-        <section class="main-content">
-            <h2 id="work">My Work</h2>
-            <div class="work">                
-                <div class="work-1">
-                    <h3>Wally's Spotted Dog Organics</h3>
-                    <p>Wally's Spotted Dog Organics, or WSDO for short, is a local condiment business. They make several all-organic salad dressings, marinades, and more. 
-                    <div class="content-card-location">Located in Islip, NY</div></p>
-                    <div class="website-links">
-                        <a href="https://wsdo.netlify.com" target="_blank" class="button-type-1">View project</a>
-                        <a href="https://github.com/ryanfurrer/wsdo" target="_blank" class="button-type-2">View code</a>
-                    </div>                    
-                </div>
-
-                <div class="work-2">
-                    <h3 class="website-link">DUBCO</h3>
-                    <p>Destination Unknown Beer Company - also known as DUBCO holds a special place in my heart. It is the best place I know to grab a pint or two after a long day. 
-                    <div class="content-card-location">Located in Bay Shore, NY</div></p>
-                    <div class="website-links">
-                        <a href="https://dubco.netlify.com" target="_blank" class="button-type-1">View project</a>
-                        <a href="https://github.com/ryanfurrer/dubco" target="_blank" class="button-type-2">View code</a>
-                    </div>
-                    
-                </div>
-
-                <div class="work-3">
-                    <h3 class="website-link">ClearBrook</h3>
-                    <p>ClearBrook is an environmental waste services company. They offer cesspool pumping, greasetrap pumping, and more to restaurants all across Long Island. This is also my current place of employment as a Customer Service Rep and when I saw the state of their current website I knew I had to make a better one.
-                    <div class="content-card-location">Located in Bay Shore, NY</div></p>
-                    <div class="website-links">
-                        <a href="https://clearbrook.netlify.com" target="_blank" class="button-type-1">View project</a>
-                        <a href="https://github.com/ryanfurrer/clearbrook" target="_blank" class="button-type-2">View code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about content-card">
-                    <h2 id="about">About Me</h2>
-                    <p>My name is Ryan Furrer and I am a 27 year old aspring Front-End Web Developer. My goal is to become a Full-Stack Developer with enough study and experience.</p><br>
-                    <p>I graduated high school in 2009 and intended to graduate with a degree in Music Education & Music Performance. That did not play out as I attended school for the following 5 years with nothing but a pile of debt to show for it.  Programming and coding was a constant interest of mine but I never thought to make more of it than just that - an interest.</p><br>
-                    <p>After leaving school to work full-time, it wasn't until the summer of 2018 that I decided to give Front-End Web Development a shot. I was unfocused and as my schedule became more busy my time learning to code diminshed.</p><br>
-                    <p>Enter June, 2019 when I decided to buckle down and make this my career. I had been lightly following trends in the industry for the past 2 years and wanted to create. Since June I have been devoting at least 2 hours per day, at least at least 5 days a week in learning these languages. I hope you feel that I can bring something new and fresh to the table at your company.</p>
-            </div>
-
-            <div class="contact content-card">
-                    <h2 id="contact">Contact Me</h2>
-                    <p>Like my work? Want to find out more? Feel free to email me at rfurrertech@gmail.com. You can also find my GitHub Profile <a href="https://github.com/ryanfurrer" target="_blank" class="inline-link">here</a>.</p>
-            </div>
-            
         </section>
 
-        <footer class="footer">
-            <p>&copyRyan Furrer 2019</p>
-            <p><a href="#top">back to top</a></p>
-        </footer>
-    </body>
+        <section id="work" class="section-title">
+            <h2>Work</h2>
+            <p>I have a huge list of personal projects I am currently or want to work on to better my skills. Below are some that are complete or in progress.</p>
+            
+            <div class="content-container">
+                <section class="work-projects-container">
+                    <div class="thumbnail-container">
+                        <a href="https://eztoggle.netlify.com/" target="_blank" rel="noreferrer"><img class="thumbnail" src="/img/ezToggle.jpg"  alt="ezToggle homepage"></a>
+                    </div>                    
+                    <div class="project-container">
+                        <h3 class="work-title">ezToggle</h3>
+                        <p>This is a simple light/dark them toggle I created to practice JavaScript and implement in my existing and future sites.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="body-link work-links" href="https://eztoggle.netlify.com/" target="_blank" rel="noreferrer">Live Site</a></p>
+                            <p><a class="body-link work-links" href="https://github.com/ryanfurrer/ezToggle" target="_blank" rel="noreferrer">GitHub</a></p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="work-projects-container">
+                    <div class="thumbnail-container">
+                        <a href="https://do-more.netlify.com/" target="_blank" rel="noreferrer"><img class="thumbnail" src="/img/dubco.jpeg"  alt="doMore homepage"></a>
+                    </div>
+                    <div class="project-container">
+                        <h3 class="work-title">doMore - work in progress</h3>
+                        <p>A very basic to-do list that let's you add, remove, and move items up and down a list. I created this to practice JavaScript.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="body-link work-links" href="https://do-more.netlify.com/" target="_blank" rel="noreferrer">Live Site</a></p>
+                            <p><a class="body-link work-links" href="https://github.com/ryanfurrer/doMore" target="_blank" rel="noreferrer">GitHub</a></p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="work-projects-container">
+                    <div class="thumbnail-container">
+                        <a href="https://wsdo.netlify.com/" target="_blank" rel="noreferrer"><img class="thumbnail" src="/img/wsdo.jpg"  alt="WSDO homepage"></a>
+                    </div>
+                    <div class="project-container">
+                        <h3 class="work-title">Wally's Organics - work in progress</h3>
+                        <p>A local business' website that I built so they had more of a web prescense than Social Media.</p>
+                        <p>Skills used: HTML, CSS, JavaScript</p>
+                        <div class="work-links-container">
+                            <p><a class="body-link work-links" href="https://wsdo.netlify.com/" rel="noreferrer">Live Site</a></p>
+                            <p><a class="body-link work-links" href="https://github.com/ryanfurrer/wsdo" target="_blank" rel="noreferrer">GitHub</a></p>
+                        </div>
+                    </div>
+                </section>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog section-title">
+            <h2>Blogging</h2>
+            <p>I write a blog that is currently hosted on <a class="body-link" href="https://dev.to/ryan_furrer" target="_blank" rel="noreferrer">DEV</a>. These can be techincal, weekly goals, or more "lifestyle" oriented blogs about learning Web Development. This includes a series titled "Journey to My New Career." Here are a few of my favorite posts.</p>
+            <div class="content-container">
+                <article class="blog-container">
+                    <div class="blog-article-container">
+                        <a class="body-link" href="https://dev.to/ryan_furrer/journey-to-my-new-career-an-introduction-3kl2" target="_blank" rel="noreferrer">
+                            <p class="blog-title">Learning & Practicing</p>
+                        </a>
+                        <p class="blog-info">Published July 8th, 2019 by Ryan Furrer</p>
+                        <p>This is it. I decided at the beginning of June 2019 to finally take coding seriously and get to work studying code...<a class="body-link" href="https://dev.to/ryan_furrer/journey-to-my-new-career-an-introduction-3kl2" target="_blank" rel="noreferrer">Read More</a></p>
+                    </div>
+                    <div class="thumbnail-container">
+                            <a href="https://dev.to/ryan_furrer/journey-to-my-new-career-an-introduction-3kl2"  target="_blank" rel="noreferrer"><p class="blog-title">
+                                <img class="thumbnail" src="/img/blog-images/learning-and-practicing-blog.jpg"  alt="White table with laptop, glasses, pencil, notebook, phone, and plant on top">
+                            </a>
+                    </div>
+                </article>
+
+                <article class="blog-container">
+                    <div class="blog-article-container">
+                        <a class="body-link" href="https://dev.to/ryan_furrer/journey-to-my-new-career-working-after-work-14en" target="_blank" rel="noreferrer">
+                            <p class="blog-title">Working After Work</p>
+                        </a>
+                        <p class="blog-info">Published July 18th, 2019 by Ryan Furrer</p>
+                        <p>I know I'm not alone in saying that working after work is exhausting. It's a necessary evil so I can become a Jr. Web Developer in a timely manner, however, that doesn't make it any less tiring...<a class="body-link" href="https://dev.to/ryan_furrer/journey-to-my-new-career-working-after-work-14en" target="_blank" rel="noreferrer">Read More</a></p>
+                    </div>
+                    <div class="thumbnail-container">
+                            <a href="https://dev.to/ryan_furrer/journey-to-my-new-career-working-after-work-14en" target="_blank" rel="noreferrer">
+                                <img class="thumbnail" src="/img/blog-images/working-after-work-blog.jpg"  alt="Wood desk with laptop, coffee mug, notepad, pen, and phone on top">
+                            </a>
+                    </div>
+                </article>
+
+                <article class="blog-container">
+                    <div class="blog-article-container">
+                        <a class="body-link" href="https://dev.to/ryan_furrer/redesigning-my-portfolio-site-4h10" target="_blank" rel="noreferrer">
+                            <p class="blog-title">Redesigning My Portfolio Site</p>
+                        </a>
+                        <p class="blog-info">Published August 16th, 2019 by Ryan Furrer</p>
+                        <p>As I will be applying to jobs in the next 1-1.5 months, mid to late September 2019, I wanted to recreate the portfolio site that will be housing my projects...<a class="body-link" href="https://dev.to/ryan_furrer/redesigning-my-portfolio-site-4h10" target="_blank" rel="noreferrer">Read More</a></p>
+                    </div>
+                    <div class="thumbnail-container">
+                            <a href="https://dev.to/ryan_furrer/redesigning-my-portfolio-site-4h10" target="_blank" rel="noreferrer">
+                                <img class="thumbnail" src="/img/blog-images/redesigning-my-portfolio-site-blog.jpg"  alt="Group of people attending a lecture looking a projector screen">
+                            </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="about-contact-container">
+            <section id="about" class="about section-title">
+                <h2>About</h2>
+                <!-- <p>Find out a bit more about me</p> -->
+                <div class="content-container">
+                    <p class="about-me-p">Thanks very much for visiting my portfolio site!<br> A bit about me: I am a Front-End Developer looking for my first job in this exciting field. Coding has always interested me but I've never acted on it until June 2019 when I started my studies with <a class="body-link" href="https://teamtreehouse.com/" target="_blank" rel="noreferrer">Treehouse</a>.</p><hr>
+                    <p>Creative problem solving & being creative in general are things I love and Front-End Web Development is a fantastic outlet for that. I hope to become a Full-Stack Web Developer in the future but for now would love to bring new, exuberant, passionate energy to your team.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section-title">
+                <h2>Contact</h2>
+                <!-- <p>Fill out the form below if you'd like to get in touch</p> -->
+                <div class="content-container">            
+                    <div class="form-style">
+                        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
+                            <label>Name:
+                                <input type="text" name="name">
+                            </label>
+
+                            <label>Email:
+                                <input type="email" name="email">
+                            </label>
+
+                            <label>Message:
+                                <textarea name="message"></textarea>
+                            </label>
+                            <input type="submit" value="Send">
+                            <div class="recaptcha">
+                                <div  data-netlify-recaptcha="true"></div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; <a class="nav-link" href="https://ryanfurrerdev-redesign.netlify.com/">Ryan Furrer</a> 2019</p>
+        <a class="nav-link"  href="https://github.com/ryanfurrer" target="_blank" rel="noreferrer"><p>GitHub</p></a>
+        <a class="nav-link"  href="https://www.linkedin.com/in/rfurrer/" target="_blank" rel="noreferrer"><p>LinkedIn</p></a>   
+        <a class="nav-link"  href="https://dev.to/ryan_furrer" target="_blank" rel="noreferrer"><p>DEV</p></a>
+        <a class="nav-link"  href="https://twitter.com/ryanfurrer_dev" target="_blank" rel="noreferrer"><p>Twitter</p></a>     
+        <a class="back-to-top-btn" href="#top"><p>back to top</p></a>
+    </footer>
+
+    <script src="js/change-theme.js"></script>
+</body>
 </html>
