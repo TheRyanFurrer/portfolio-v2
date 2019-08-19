@@ -144,12 +144,12 @@ hr {
     max-width: 50%;
 }
 
-.tag-line {
+.tagline {
     color: var(--brand-color-main);
     font-size: 1.5rem; 
 }
 
-.tag-line-dark {
+.tagline-dark {
     color: var(--brand-color-light);
 }
 
