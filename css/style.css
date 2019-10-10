@@ -124,13 +124,18 @@ hr {
 }
 
 .resume-download {
+    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 75px;
+}
+
+.resume-download a {
+    color: var(--brand-color-main);
     transition: all .5s ease;
 }
 
-.resume-download:hover {
-    color: var(--brand-color-main);
+.resume-download a:hover {
+    color: var(--brand-color-dark);
 }
 
 .banner {
