@@ -123,6 +123,16 @@ hr {
     height: 100vh;
 }
 
+.resume-download {
+    margin-top: 25px;
+    margin-bottom: 75px;
+    transition: all .5s ease;
+}
+
+.resume-download:hover {
+    color: var(--brand-color-main);
+}
+
 .banner {
     animation: fadein 1.5s;
     align-items: center;
