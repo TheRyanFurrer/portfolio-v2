@@ -1,6 +1,18 @@
-# ryanfurrer.github.io
+# Portfolio-v2
 
-This is my first real attempt at building a portfolio site.
+This was my first real attempt at building a portfolio site which later became v3, which went on to become v4. You can view each of them via the links below.
 
-I will be updating this site moving forward so be sure to come back weekly to see my progress.
-If you want to chat you can always find me on discord - my username is Ryan Furrer#2401 or you can email me at rfurrertech@gmail.com
+## v2
+[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-v2)
+
+[Live Site](https://the-ryan-furrer-v2.netlify.app/)
+
+## v3
+[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-v3)
+
+[Live Site](https://the-ryan-furrer-v3.netlify.app/)
+
+## v4 (current)
+[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-current)
+
+[Live Site](https://theryanfurrer.dev/)
