@@ -1,20 +1,4 @@
-# portfolio-v2
-
-This was my first real attempt at building a portfolio site which later became v3, which went on to become v4. You can view each of them via the links below.
-![Screentshot of portfolio-v2](https://user-images.githubusercontent.com/40150036/151720173-cf2e6ec4-bc99-407d-90d6-ae29ed977f58.png)
-
-
-## v2
-[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-v2)
-
-[Live Site](https://the-ryan-furrer-v2.netlify.app/)
-
-## v3
-[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-v3)
-
-[Live Site](https://the-ryan-furrer-v3.netlify.app/)
-
-## v4 (current)
-[GitHub Repo](https://github.com/TheRyanFurrer/portfolio-current)
-
-[Live Site](https://theryanfurrer.dev/)
+> [!NOTE]
+> This repo has been publicly archived as I am on my fifth iteration of my portfolio, which you can [view here](https://github.com/ryanfurrer/ryanfurrer-v5).
+# ryanfurrer-v2
+The second iteration of my portfolio site, built with HTML and CSS. It is very basic but I learned flexbox very well while building it.
